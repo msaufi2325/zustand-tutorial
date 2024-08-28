@@ -5,5 +5,5 @@ type CounterStore = {
 }
 
 export const useCounterStore = create<CounterStore>(() => ({
-  count: 0,
+  count: 7,
 }))
