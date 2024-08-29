@@ -13,6 +13,7 @@ export const useCounterStore = create<CounterStore>((set) => ({
     set((state) => ({ count: state.count + 1 }));
   },
   incrementAsync: async () => {
+    // const response = await fetch('https://api.example.com');
     await new Promise((resolve) => setTimeout(resolve, 1000));
     set((state) => ({ count: state.count + 1 }));
   },
